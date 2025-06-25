@@ -177,7 +177,7 @@ color: #fefdfd;
 }
 .serviceslist div:hover{
     background-color: #ff004f; 
-   transform:translateY(-10px); ;
+   transform:translateY(-10px);
 }
 /* Portfolio */
 #portfolio{
