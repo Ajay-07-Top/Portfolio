@@ -12,86 +12,60 @@
         <div class="container">
             <nav>
                 <img src="images/logo2.png" class="logo" alt="">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">PortFolio</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">PortFolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headertext">
                 <p>B.Tech CSE Student <br>Strong Foundation in Programming <br> Eager to Grow in Tech</p>
                 <h1>Hi, I'm <span>Devendra</span></h1>
             </div>
-          
-
         </div>
-
     </div>
 
-    <!--About section-- -->
+    <!-- About section -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about_col1">
-                   <img src="images/user.png" alt="">     
+                    <img src="images/user.png" alt="">     
                 </div>
                 <div class="about_col2">
                     <h1 class="subtitle">About Me</h1>
                     <p>
                         I am a B.Tech student specializing in Computer Science, driven by a passion for technology and problem-solving. With a solid foundation in programming and software development, I enjoy building practical solutions and exploring emerging technologies. I am currently expanding my skills in full-stack development and aim to contribute to innovative projects that make a real-world impact.
-
-
                     </p>
                     <div class="tabtitle">
-                    <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tablinks" onclick="opentab('education')">Education</p>
-                    
+                        <p class="tablinks active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tablinks" onclick="opentab('education')">Education</p>
                     </div>
-                    <!-- Skills -->
                     <div class="tabcontent activetab" id="skills">
                         <ul>
-                           <li>
-                            <span>UI/UX</span><br>Designing Web/App Interfaces
-                           </li> 
-                           <li>
-                            <span>React</span><br>Web Development
-                           </li> 
-                           <li>
-                            <span>Data Structure & Algorithm</span><br>Understanding how data is Stored
-                           </li> 
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>React</span><br>Web Development</li>
+                            <li><span>Data Structures & Algorithms</span><br>Problem Solving</li>
                         </ul>
                     </div>
-                    <!-- Education -->
-
-
                     <div class="tabcontent" id="education">
                         <ul>
-                           <li>
-                            <span>2022 - Current</span><br>Btech In Computer Science
-                           </li> 
-                           <li>
-                            <span>2019 - 2020</span><br>12 - CBSE
-                           </li> 
-                           <li>
-                            <span>2017 - 2018</span><br>10 - CBSE
-                           </li> 
+                            <li><span>2022 - Current</span><br>B.Tech in Computer Science</li>
+                            <li><span>2019 - 2020</span><br>12th - CBSE</li>
+                            <li><span>2017 - 2018</span><br>10th - CBSE</li>
                         </ul>
                     </div>
-                    <!-- If you want to add more gtab add here  -->
-
-
- 
-
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- About Section Ends Here -->
-     <!-- Services -->
-      <div id="services">
+
+    <!-- Services -->
+    <div id="services">
         <div class="container">
             <h1 class="subtitle">My Services</h1>
             <div class="serviceslist">
@@ -100,101 +74,89 @@
                     <h2>Web Development</h2>
                     <p>I create responsive and user-friendly websites using modern technologies.</p>
                     <a href="#">Learn More</a>
-
                 </div>
                 <div>
                     <i class="fa-solid fa-gears"></i>
                     <h2>Programming Logic</h2>
                     <p>Solving data structure and algorithm problems and helping others understand core CS concepts.</p>
                     <a href="#">Learn More</a>
-
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
                     <h2>Database Management</h2>
-                    <p>Designing and managing databases using SQL and MongoDB for full-stack applications</p>
+                    <p>Designing and managing databases using SQL and MongoDB for full-stack applications.</p>
                     <a href="#">Learn More</a>
-
                 </div>
             </div>
         </div>
-      </div>
-      <!-- Portfolio -->
-       <div id="portfolio">
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
         <div class="container">
             <h1 class="subtitle">My Work</h1>
             <div class="worklist">
                 <div class="work">
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
-                        <h3>Student Report Card System</h3>
-                        <p>The Student Report Card System is a GUI based system created using Qt creator and the main language used was C++</p>
+                        <h3>Custom Linux Shell</h3>
+                        <p>Implemented a custom command-line shell in C that supports command parsing, piping, redirection, and process management using fork().</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
-                        <h3>Path Finding Visualizer</h3>
-                        <p>Pathfinding algorithm visualisation using C++ and SFML.
-
-                            So far it can show BFS, Greedy BFS, Dijkstra's, and A*.</p>
+                        <h3>Mini Torrent (P2P File Sharing)</h3>
+                        <p>Built a peer-to-peer file sharing web app using HTML, CSS, and JavaScript with WebRTC and WebSocket for secure real-time transfer.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
-
                 </div>
                 <div class="work">
                     <img src="images/work-3.png" alt="">
                     <div class="layer">
-                        <h3>Mern E commerse Site</h3>
-                        <p>Built a responsive and user-friendly eCommerce platform designed to handle real-world shopping experiences. Implemented secure authentication, dynamic product handling, and cart functionality.</p>
+                        <h3>MERN eCommerce Website</h3>
+                        <p>Developed a full-stack eCommerce site using MongoDB, Express.js, React, and Node.js with secure login and cart system.</p>
                         <a href="#"><i class="fa-solid fa-link"></i></a>
                     </div>
-                   
                 </div>
             </div>
             <a href="#" class="btn">See More</a>
         </div>
+    </div>
 
-       </div>
-       <!-- contact -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contactleft">
-                        <h1 class="subtitle">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>ajaybisht039@gmail.com</p>
-                        <p> <i class="fa-solid fa-phone"></i>8476904399</p>
-                        <div class="socialicon">
-                            <a href="https://www.linkedin.com/in/devendra-singh-bisht-60b507281"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/dev_bisht05?igsh=bzZlbDE4bzRldDdo"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
-                        <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
-
-
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ajaybisht039@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8476904399</p>
+                    <div class="socialicon">
+                        <a href="https://www.linkedin.com/in/devendra-singh-bisht-60b507281"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/dev_bisht05?igsh=bzZlbDE4bzRldDdo"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <div class="contactright">
-                        <form >
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" 
-                            name="Email" required>
-            
-                            <textarea rows="6" placeholder="Your Message" name="Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-
-                        </form>
-                    </div>
-
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contactright">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea rows="6" name="Message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
                 </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 Devendra Singh Bisht. All rights reserved.</p>
-            </div>
         </div>
+        <div class="copyright">
+            <p>&copy; 2025 Devendra Singh Bisht. All rights reserved.</p>
+        </div>
+    </div>
+
     <script>
         var tablinks = document.getElementsByClassName("tablinks");
         var tabcontent = document.getElementsByClassName("tabcontent");
-    
         function opentab(tabname) {
             for (let tab of tabcontent) {
                 tab.classList.remove("activetab");
@@ -206,11 +168,14 @@
             event.currentTarget.classList.add("active-link");
         }
     </script>
-    
-
-    
-   
-
-    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
